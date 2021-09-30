@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>saekaIsozumi</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- jQuery読み込み -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!-- lightboxの読み込み -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"
+		type="text/javascript"></script>
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+	<!-- fontawesomeの読み込み -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- googlefonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Rajdhani&display=swap"
+		rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<div class="logo">
+			<h1>My Works</h1>
+		</div>
+		<!-- ハンバーガーメニュー -->
+		<div id="hamburger">
+			<div class="icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- スマホサイズ -->
+		<nav class="sm">
+			<ul>
+				<li><a href="#top">TOP</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#works">WORKS</a></li>
+				<li><a href="#history">HISTORY</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#language">LANGUAGES</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- ヘッダーリスト -->
+		<nav class="pc">
+			<ul>
+				<li><a href="#top" id="top1" onmouseover="topon();" onmouseout="topout()">TOP</a></li>
+				<li><a href="#about" id="about1" onmouseover="abouton();" onmouseout="aboutout()">ABOUT</a></li>
+				<li><a href="#works" id="works1" onmouseover="workon();" onmouseout="workout()">WORKS</a></li>
+				<li><a href="#history" id="history1" onmouseover="historyon();" onmouseout="historyout()">HISTORY</a>
+				</li>
+				<li><a href="#skills" id="skills1" onmouseover="skillson();" onmouseout="skillsout()">SKILLS</a></li>
+				<li style="width: 120px"><a href="#language" id="langs1" onmouseover="langson();" onmouseout="langsout()">ABILITIES</a></li>
+				<li><a href="#contact" id="contact1" onmouseover="contacton();" onmouseout="contactout()">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div class="mainvidual">
+		<img src="images/hand.jpg" alt="mainvidual">
+	</div>
+	<main class="main">
+		<section id="about">
+			<h2>About Me</h2>
+			<dl>
+				<dt>name</dt>
+				<dd>Saeka Isozumi</dd>
+				<dt>phone</dt>
+				<dd><a href="tel:090-8421-3946">090-0000-0000</a></dd>
+				<dt>mail</dt>
+				<dd><a href="mailto:saeka.isozumi@gmail.com">saeka.isozumi@gmail.com</a></dd>
+				<dt>github</dt>
+				<dd>isozumisaeka</dd>
+				<dt>redume[en]</dt>
+				<dd><a href="#">click here <i class="fas fa-link"></i></a></dd>
+				<dt>redume[jp]</dt>
+				<dd><a href="#">click here <i class="fas fa-link"></i></a></dd>
+				<dt>SNS:</dt>
+				<dd>
+					<span><a href="https://jp.linkedin.com"><i class="fab fa-linkedin sns"></i></a></span>
+					<span><a href="https://github.com"><i class="fab fa-github-square sns"></i></a></span>
+					<span><a href="https://www.facebook.com/"><i class="fab fa-facebook-square sns"></i></a></span>
+					<span><a href="https://www.instagram.com/"><i class="fab fa-instagram sns"></i></a></span>
+					<span><a href="https://www.twitter.com/"><i class="fab fa-twitter sns"></i></a></span>
+
+				</dd>
+			</dl>
+		</section>
+		<section id="works">
+			<h2>My Works</h2>
+			<ul>
+				<p><a href="images/1.jpg" data-lightbox="mywork"><img src="images/1.jpg"></a></p>
+				<p><a href="images/2.jpg" data-lightbox="mywork"><img src="images/2.jpg"></a></p>
+				<p><a href="images/3.jpg" data-lightbox="mywork"><img src="images/3.jpg"></a></p>
+				<p><a href="images/4.jpg" data-lightbox="mywork"><img src="images/4.jpg"></a></p>
+				<p><a href="images/5.jpg" data-lightbox="mywork"><img src="images/5.jpg"></a></p>
+				<p><a href="images/6.jpg" data-lightbox="mywork"><img src="images/6.jpg"></a></p>
+				<p><a href="images/7.jpg" data-lightbox="mywork"><img src="images/24.jpg"></a></p>
+				<p><a href="images/8.jpg" data-lightbox="mywork"><img src="images/26.jpg"></a></p>
+				<p><a href="images/1.jpg" data-lightbox="mywork"><img src="images/23.jpg"></a></p>
+			</ul>
+			<p><a href="work.html">details</a></p>
+		</section>
+		<section id="history">
+			<h2>History</h2>
+			<dl>
+				<dt>2003.04-2007.03:</dt>
+				<dd>私立〇〇高等学校 普通科国際コース</dd>
+				<dt>2007.04-2011.03:</dt>
+				<dd>〇〇大学 総合政策学部 総合政策学科(学士)</dd>
+				<dt>2011.4-2012.9:</dt>
+				<dd>〇〇</dd>
+				<dt>2012.10-2016.6:</dt>
+				<dd>株式会社〇〇</dd>
+				<dt>2016.07-2018.12:</dt>
+				<dd>株式会社〇〇</dd>
+				<dt>2018.12</dt>
+				<dd>ワーキングホリデー渡独</dd>
+				<dt>2018.12-2019.06:</dt>
+				<dd>F+U language school in Berlin, GER</dd>
+				<dt>2020.01-03:</dt>
+				<dd>Ironhack Berlin, GER(プログラミング)</dd>
+				<dt>2020.06</dt>
+				<dd>ワーキングホリデー帰国</dd>
+				<dt>2020.07-2021.03:</dt>
+				<dd>株式会社〇〇</dd>
+				<dt>2021.06.01-:</dt>
+				<dd>愛知県職業訓練校(Webアプリ科)</dd>
+			</dl>
+			<!-- <dl>
+				<dt>2003.04-2007.03:</dt>
+				<dd>私立清林館高等学校 普通科国際コース</dd>
+				<dt>2007.04-2011.03:</dt>
+				<dd>南山大学 総合政策学部 総合政策学科(学士)</dd>
+				<dt>2011.4-2012.9:</dt>
+				<dd>アンイングリッシュクラブ 講師</dd>
+				<dt>2012.10-2016.6:</dt>
+				<dd>株式会社ECC 営業カウンセラー</dd>
+				<dt>2016.07-2018.12:</dt>
+				<dd>株式会社リンク・インタラック　営業コンサルタント</dd>
+				<dt>2018.12</dt>
+				<dd>ワーキングホリデー渡独</dd>
+				<dt>2018.12-2019.06:</dt>
+				<dd>F+U language school in Berlin, GER</dd>
+				<dt>2020.01-03:</dt>
+				<dd>Ironhack Berlin, GER(プログラミング)</dd>
+				<dt>2020.06</dt>
+				<dd>ワーキングホリデー帰国</dd>
+				<dt>2020.07-2021.03:</dt>
+				<dd>株式会社アール・エス・シー　一般事務</dd>
+				<dt>2021.06.01-:</dt>
+				<dd>愛知県職業訓練校(Webアプリ科)</dd>
+			</dl> -->
+		</section>
+		<section id="skills">
+			<h2>Skills</h2>
+			<div class="myskills">
+				<div>
+					<i class="fab fa-html5 size"></i>
+					<h3>HTML</h3>
+					<p>★★★☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-css3-alt size"></i>
+					<h3>CSS</h3>
+					<p>★★★☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-js-square size"></i>
+					<h3>Javascript</h3>
+					<p>★★★☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-php size"></i>
+					<h3>PHP</h3>
+					<p>★★☆☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-java size"></i>
+					<h3>Java</h3>
+					<p>★★☆☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-react size"></i>
+					<h3>React</h3>
+					<p>★★☆☆☆</p>
+				</div>
+				<div>
+					<i class="fab fa-node size"></i>
+					<h3>Node.js</h3>
+					<p>★★☆☆☆</p>
+				</div>
+				<div>
+					<i class="fas fa-database size"></i>
+					<h3>MySQL</h3>
+					<p>★★☆☆☆</p>
+				</div>
+			</div>
+		</section>
+		<section id="language">
+			<h2>Abilities</h2>
+			<div class="myskills">
+				<div>
+					<i class="fas fa-car size"></i>
+					<h3>普通自動車免許</h3>
+					<p>AT限定</p>
+				</div>
+				<div>
+					<i class="fas fa-language size"></i>
+					<h3>TOEIC</h3>
+					<p>SCORE</p>
+				</div>
+				<div>
+					<i class="fas fa-language size"></i>
+					<h3>英検</h3>
+					<p>級</p>
+				</div>
+				<div>
+					<i class="fas fa-language size"></i>
+					<h3>Japanese</h3>
+					<p>Native</p>
+					<p>★★★★★</p>
+				</div>
+				<div>
+					<i class="fas fa-language size"></i>
+					<h3>English</h3>
+					<p>advanced</p>
+					<p>★★★★☆</p>
+				</div>
+				<div>
+					<i class="fas fa-language size"></i>
+					<h3>German</h3>
+					<p>intermidiate</p>
+					<p>★★☆☆☆</p>
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<h2>Contact</h2>
+			<form>
+				<dl class="contactform">
+					<dt>name:</dt>
+					<dd><input type="text" name=""></dd>
+					<dt>email:</dt>
+					<dd><input type="text" name=""></dd>
+					<dt>message:</dt>
+					<dd><textarea></textarea></dd>
+				</dl>
+				<div class="submit">
+					<input type="submit" name="" value="submit">
+				</div>
+			</form>
+		</section>
+	</main>
+	<footer>&copy; My work 2021</footer>
+	<div id="page_top"><a href="#top"></a></div>
+	<!-- js -->
+	<script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>saekaIsozumi</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- jQuery読み込み -->
+	<script src="jquery-3.6.0.min.js"></script>
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.4/css/all.css">
+	<!-- fontawesomeの読み込み -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+	<!-- googlefonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Rajdhani&display=swap"
+		rel="stylesheet">
+	<!-- flickityのCSSの読み込み -->
+	<link rel="stylesheet" href="flickity-docs/flickity.css" />
+	<!-- flickityのJavaScriptの読み込み -->
+	<script src="flickity-docs/flickity.pkgd.js"></script>
+	
+</head>
+
+<body>
+	<script>
+	//Flickity用のコード
+    //自動スクロール設定
+let elem = document.getElementById("fs");
+let autoFlickity = new Flickity(elem, {
+    autoPlay: 2000
+
+});
+//Flickity用のコード終わり
+	</script>
+	<header class="header">
+		<div class="logo">
+			<h1>My Works</h1>
+		</div>
+		<!-- ハンバーガーメニュー -->
+		<div id="hamburger">
+			<div class="icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<!-- スマホサイズ -->
+		<nav class="sm">
+			<ul>
+				<li><a href="#top">TOP</a></li>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#works">WORKS</a></li>
+				<li><a href="#history">HISTORY</a></li>
+				<li><a href="#skills">SKILLS</a></li>
+				<li><a href="#language">LANGUAGES</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</nav>
+		<!-- ヘッダーリスト -->
+		<nav class="pc">
+			<ul>
+				<li><a href="#top" id="top1" onmouseover="topon();" onmouseout="topout()">TOP</a></li>
+				<li><a href="#about" id="about1" onmouseover="abouton();" onmouseout="aboutout()">ABOUT</a></li>
+				<li><a href="#works" id="works1" onmouseover="workon();" onmouseout="workout()">WORKS</a></li>
+				<li><a href="#history" id="history1" onmouseover="historyon();" onmouseout="historyout()">HISTORY</a>
+				</li>
+				<li><a href="#skills" id="skills1" onmouseover="skillson();" onmouseout="skillsout()">SKILLS</a></li>
+				<li style="width: 120px"><a href="#language" id="langs1" onmouseover="langson();" onmouseout="langsout()">ABILITIES</a></li>
+				<li><a href="#contact" id="contact1" onmouseover="contacton();" onmouseout="contactout()">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="main">
+		<section id="works">
+			<h2>My Works</h2>
+			<div class="flickity-syncer" id="fs">
+				<img src="images/1.jpg">
+				<img src="images/2.jpg">
+				<img src="images/3.jpg">
+				<img src="images/4.jpg">
+				<img src="images/5.jpg">
+				<img src="images/6.jpg">
+				<img src="images/24.jpg">
+				<img src="images/26.jpg">
+				<img src="images/23.jpg">
+			</div>
+		</section>
+		
+	</main>
+	<footer>&copy; My work 2021</footer>
+	<div id="page_top"><a href="#top"></a></div>
+	<!-- js -->
+	<script src="script.js" type="text/javascript"></script>
+</body>
+
+</html>
